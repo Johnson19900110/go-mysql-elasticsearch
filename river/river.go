@@ -292,8 +292,9 @@ func (r *River) Run() error {
 	canalSyncState.Set(float64(1))
 	go r.syncLoop()
 
-	pos := r.master.Position()
-	if err := r.canal.RunFrom(pos); err != nil {
+	//pos := r.master.Position()
+	//if err := r.canal.RunFrom(pos); err != nil {
+	if err := r.canal.Dump(); err != nil {
 		log.Errorf("start canal err %v", err)
 		canalSyncState.Set(0)
 		return errors.Trace(err)

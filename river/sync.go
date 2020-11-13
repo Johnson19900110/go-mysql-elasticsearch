@@ -25,6 +25,7 @@ const (
 )
 
 const mysqlDateFormat = "2006-01-02"
+const mysqlDateTimeFormat = "2006-01-02 00:00:00"
 
 type posSaver struct {
 	pos   mysql.Position
@@ -179,6 +180,7 @@ func (r *River) makeRequest(rule *Rule, action string, rows [][]interface{}) ([]
 		if err != nil {
 			return nil, errors.Trace(err)
 		}
+		id = fmt.Sprintf("%s_%s", rule.TableInfo.Name, id)
 
 		parentID := ""
 		if len(rule.Parent) > 0 {
@@ -333,7 +335,7 @@ func (r *River) makeReqColumnData(col *schema.TableColumn, value interface{}) in
 			if err != nil || vt.IsZero() { // failed to parse date or zero date
 				return nil
 			}
-			return vt.Format(time.RFC3339)
+			return vt.Format(mysqlDateTimeFormat)
 		}
 	case schema.TYPE_DATE:
 		switch v := value.(type) {

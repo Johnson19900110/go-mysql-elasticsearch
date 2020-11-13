@@ -3,7 +3,7 @@ go-mysql-elasticsearch is a service syncing your MySQL data into Elasticsearch a
 It uses `mysqldump` to fetch the origin data at first, then syncs data incrementally with binlog.
 
 ## Call for Committer/Maintainer
-Sorry that I have no enough time to maintain this project wholly, if you like this project and want to help me improve it continuously, please contact me through email (siddontang@gmail.com).
+Sorry that I have no enough time to maintain this project wholly, if you like this project and want to help me improve it continuously, please contact me through email
 
 Requirement: In the email, you should list somethings(including but not limited to below) to make me believe we can work together.
 
@@ -214,17 +214,3 @@ Although there are some other MySQL rivers for Elasticsearch, like [elasticsearc
 + MySQL 8
 + ES 6
 + Statistic.
-
-## Donate
-
-If you like the project and want to buy me a cola, you can through: 
-
-|PayPal|微信|
-|------|---|
-|[![](https://www.paypalobjects.com/webstatic/paypalme/images/pp_logo_small.png)](https://paypal.me/siddontang)|[![](https://github.com/siddontang/blog/blob/master/donate/weixin.png)|
-
-## Feedback
-
-go-mysql-elasticsearch is still in development, and we will try to use it in production later. Any feedback is very welcome.
-
-Email: siddontang@gmail.com

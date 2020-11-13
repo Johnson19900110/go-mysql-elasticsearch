@@ -10,6 +10,4 @@ require (
 	github.com/prometheus/client_golang v0.9.3
 	github.com/siddontang/go v0.0.0-20180604090527-bdc77568d726
 	github.com/siddontang/go-log v0.0.0-20190221022429-1e957dd83bed
-	github.com/siddontang/go-mysql v1.1.0 // indirect
-	github.com/siddontang/go-mysql-elasticsearch v0.0.0-20200822025838-fe261969558b // indirect
 )

@@ -7,10 +7,10 @@ import (
 	"strings"
 	"sync"
 
+	"github.com/Johnson19900110/go-mysql-elasticsearch/elastic"
+	"github.com/Johnson19900110/go-mysql/canal"
 	"github.com/juju/errors"
 	"github.com/siddontang/go-log/log"
-	"github.com/siddontang/go-mysql-elasticsearch/elastic"
-	"github.com/siddontang/go-mysql/canal"
 )
 
 // ErrRuleNotExist is the error if rule is not defined.
